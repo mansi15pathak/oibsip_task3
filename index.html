@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/style2.css">
+  <script>
+    function check() {
+      var choice = window.document.my.mychoice.value;
+      //alert(choice);
+      if (choice == "Celsius") {
+        let output = (parseFloat(window.document.my.inputval.value) * 9) / 5 + 32;
+       // alert(output);
+        window.document.my.result.value = output;
+      }
+      else {
+        let output = ((parseFloat(window.document.my.inputval.value) - 32) * 5) / 9;
+        output = parseFloat(output.toFixed(2));
+        window.document.my.result.value = output;
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Temperature Converter</h1>
+  <div class="frm">
+    
+    <form name="my">
+      <input class="inp" type="text" name="inputval" placeholder="Degrees">
+      <select name="mychoice">
+        <option value="Celsius">Celsius</option>
+        <option value="Fahrenheit">Fahrenheit</option>
+      </select>
+   <input class="oup" type="text" id="Name" name="result" placeholder="Result">
+      <button class="convert" type="button" OnClick="check()">Convert</button>
+ 
+    </form>
+    
+  </div>
+  
+    
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Bhai+2:wght@600&family=Roboto+Mono:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 18px;
+}
+body{
+    background-color: rgb(139, 201, 237);
+   
+}
+.frm{
+    height: 80vh;
+   margin-top: -200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.convert{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25) ;
+    border-radius: 5px;
+    border: transparent;
+    padding: 0.7rem 2rem;
+    transition: all .3s ease;
+    margin-top: 2rem;
+
+
+}
+.convert:hover{
+    background-color: rgb(18, 143, 201);
+    color: white;
+    cursor: pointer;
+}
+
+.inp{
+    width: 49.5%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: none;
+    margin-top: 8px;
+    padding: 0 10px;
+
+}
+
+.oup{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    outline: none;
+    margin-top: 8px;
+    padding: 0 10px;
+
+}
+select{
+    width: 49%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #d2d2d2;
+    outline: none;
+    margin-top: 8px;
+    padding: 0 10px;
+}
+h1{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
